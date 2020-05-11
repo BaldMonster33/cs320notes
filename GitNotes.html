@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Gits Note</title>
+</head>
+<body>
+    <h1> Notes for git </h1>
+    <h3> Commiting </h3>
+    <p><i>git commit</i>: make a new commit.(No name)</p>
+    <h3> Branching </h3>
+    <p><i>git branch NAME</i>: make a new branch called NAME</p>
+    <p><i>git checkout NAME</i>: put us on a new branch</p>
+    <p><i>git checkout -b NAME</i>: put us on a new branch named NAME</p>
+    <h3> Moving around </h3>
+    <p><i>git merge NAME </i>:merge the branch NAME into HEAD. This would create a new commit one.</p>
+    <p><i>git rebase NAME</i>: copy from HEAD to under NAME. If HEAD is an ancestor of NAME, HEAD will be moved forward. </p>
+    <p>relative refs: Moving up with "^", and <i>~&lt;num&gt;</i> for a number of times. Using with <i>git checkout NAME</i></p>
+    <p><i>git branch -f NAME HEAD~nums</i>: move NAME to places ahead of HEAD for nums</p>
+    <p><i>git reset HEAD~nums</i>: revert changes by moving backwards.(local)</p>
+    <p><i>git revert HEAD</i>: reverse changes and share with others.(Make a new ')</p>
+    <h3> Local and Cloud </h3>
+    <p><i>git init; git add FILE; git commit -m "NOTES"</i>: initialization, adding file and memo. </p>
+    <p><i>git remote add NAME URL; git push -u NAME BRANCH</i> : submit to Github</p>
+</body>
+</html>
